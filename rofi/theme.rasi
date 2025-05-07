@@ -1,0 +1,77 @@
+@import "~/.cache/wal/colors-rofi.rasi"
+
+* {
+    font: "RobotoMono Nerd Font 10";
+}
+
+window {
+    width: 40%;
+    padding: 10px;
+    background-color: @background-transparent;
+    border: 3px;
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+inputbar {
+    margin: 0px;
+    padding: 10px;
+    background-color: @foreground;
+    border-radius: 2px;
+    children: [ textbox-prompt, entry ];
+}
+
+textbox-prompt {
+    expand: false;
+    content: "";
+    padding: 0 14px 0 0;
+}
+
+entry {
+    placeholder: "Search...";
+    text-color: @background;
+    placeholder-color: @background;
+}
+
+listview {
+    border: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    border-color: black;
+    border-radius: 2px;
+    background-color: transparent;
+    scrollbar: false;
+    lines: 8;
+    spacing: 0;
+}
+
+element {
+    padding: 10px;
+    text-color: @foreground;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element normal.urgent,
+element alternate.urgent,
+element selected.active {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+/* seleccionado */
+
+element normal.active,
+element alternate.active,
+element selected.urgent {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+element selected.normal {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
