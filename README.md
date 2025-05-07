@@ -5,6 +5,13 @@ The name is inspired by the beauty and delicacy of a TikTok content creator, who
 
 This project aims not only to be functional and productive but also to convey a sense of beauty and harmony while working on the system.
 
+## Technologies Used
+
+- Wayland
+- Hyprland
+- Waybar
+- Rofi
+
 ## Screenshots
 
 ![screenshot-2](screenshots/screenshot_2025-04-12_00-02-55.png)
