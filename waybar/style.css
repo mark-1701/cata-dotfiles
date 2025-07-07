@@ -4,10 +4,8 @@
 
 * {
     /* noto-fonts-cjk paquete pacman para letras chinas */
-    
     /* font-family: "RobotoMono Nerd Font", "Noto Sans Mono", 
     "JetBrainsMono Nerd Font", "Font Awesome 6 Free", "Symbols Nerd Font"; */
-    
     font-family: "RobotoMono Nerd Font";
     font-weight: bold;
     font-size: 12px;
@@ -15,7 +13,6 @@
 
 window#waybar {
     background-color: transparent;
-    color: @white;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -77,10 +74,23 @@ button:hover {
 #backlight,
 #network,
 #pulseaudio {
-    padding: 0 10px;
+    /* padding: 0 10px; */
+    margin: 0 10px;
+    padding-right: 2px;
     color: @white;
 }
 
+
+/* Custom padding spaces  */
+#clock {
+    padding: 0;
+}
+
+#network {
+    padding-right: 8px;
+}
+
+/* Others configurations */
 #battery {
     color: @white;
 }
@@ -98,8 +108,7 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: @white;
+    color: #f53c3c;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -107,11 +116,6 @@ button:hover {
     animation-direction: alternate;
 }
 
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
 #network.disconnected {
-    background-color: #f53c3c;
+    color: #f53c3c;
 }

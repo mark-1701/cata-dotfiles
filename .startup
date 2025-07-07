@@ -1,0 +1,19 @@
+# enable pywal graphics
+
+source ~/python-envs/pywal-env/bin/activate > /dev/null 2>&1
+
+# static route
+
+# wal -i "/home/marcus/.wallpapers/wlp.jpg" > /dev/null 2>&1
+
+# dynamic route
+
+wallpaper_path=$(crudini --get ~/.config/waypaper/config.ini Settings wallpaper)
+
+wallpaper_path="${wallpaper_path/#\~/$HOME}"
+
+if [ -f "$wallpaper_path" ]; then
+    wal -i "$wallpaper_path" > /dev/null 2>&1
+fi
+
+deactivate > /dev/null 2>&1
