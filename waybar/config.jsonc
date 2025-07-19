@@ -9,6 +9,7 @@
     "fixed-center": true,
     "margin-top": 10,
     "modules-left": [
+        "custom/menu-boton",
         "backlight",
         "pulseaudio"
     ],
@@ -18,8 +19,22 @@
     "modules-right": [
         "network",
         "battery",
-        "clock"
+        "clock",
+        "custom/session-boton"
     ],
+    // Custom Modules
+    "custom/session-boton": {
+        "format": "",
+        "tooltip": "Apagar el sistema",
+        "on-click": "~/.local/bin/rofi-custom-menu",
+        "interval": 9999999
+    },
+    "custom/menu-boton": {
+        "format": "󰣇",
+        "tooltip": "Apagar el sistema",
+        "on-click": "rofi -show drun",
+        "interval": 9999999
+    },
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": true,

@@ -1,7 +1,7 @@
 * {{
-    foreground: rgb({foreground.rgb});
-    foreground-transparent: rgba({foreground.rgb},0.8);
     background: rgb({background.rgb});
-    background-transparent: rgba({background.rgb},0.9);
-    background-alt: rgb({color1.rgb});
+    background-transparent-8: rgba({background.rgb},0.85);
+    foreground: rgb({foreground.rgb});
+    foreground-transparent-1: rgba({foreground.rgb},0.06);
+    color4: rgb({color4.rgb});
 }}

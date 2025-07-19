@@ -25,8 +25,8 @@ window#waybar.hidden {
 .modules-center,
 .modules-right {
     padding: 0 2rem;
-    background-color: alpha(@background, 0.2);
-    border: solid 2px @white;
+    background-color: alpha(@background, 0.4);
+    border: solid 1.5px @white;
 }
 
 .modules-center {
@@ -73,13 +73,15 @@ button:hover {
 #battery,
 #backlight,
 #network,
-#pulseaudio {
+#pulseaudio,
+#custom-session-boton,
+#custom-menu-boton
+ {
     /* padding: 0 10px; */
     margin: 0 10px;
     padding-right: 2px;
     color: @white;
 }
-
 
 /* Custom padding spaces  */
 #clock {
@@ -88,6 +90,10 @@ button:hover {
 
 #network {
     padding-right: 8px;
+}
+
+#custom-session-boton {
+    padding-right: 4px;
 }
 
 /* Others configurations */

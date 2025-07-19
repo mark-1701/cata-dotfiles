@@ -1,0 +1,29 @@
+#!/bin/bash
+
+UPTIME="`uptime -p | sed -e 's/up //g'`"
+
+# Define las opciones de tu menú
+OPTIONS="\n\n\n"
+
+# Muestra el menú de Rofi y captura la selección del usuario
+# Le indicamos a Rofi que use el tema específico con -theme
+SELECTION=$(echo -e "$OPTIONS" | rofi -dmenu -p "Uptime: $UPTIME" -theme session)
+
+# Procesa la selección del usuario
+case "$SELECTION" in
+    "")
+        poweroff
+        ;;
+    "")
+        reboot
+        ;;
+    "")
+        systemctl suspend
+        ;;
+    "")
+        hyprctl dispatch exit
+        ;;
+    *)
+        echo "Ninguna opción seleccionada o selección inválida."
+        ;;
+esac
