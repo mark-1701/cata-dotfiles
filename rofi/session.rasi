@@ -15,7 +15,7 @@ window {
     location:                   center;
     anchor:                     center;
     fullscreen:                 false;
-    width:                      428;
+    width:                      508;
     x-offset:                   0px;
     y-offset:                   0px;
 
@@ -29,7 +29,7 @@ window {
     border-color:               @foreground;
 
     cursor:                     "default";
-    background-color:           @background-transparent-8;
+    background-color:           @background-transparent-7;
 }
 
 // ***************** MAINBOX ******************
@@ -85,7 +85,7 @@ prompt {
 
 listview {
     enabled:                    true;
-    columns:                    4;
+    columns:                    5;
     lines:                      1;
     cycle:                      true;
     dynamic:                    true;

@@ -3,7 +3,7 @@
 UPTIME="`uptime -p | sed -e 's/up //g'`"
 
 # Define las opciones de tu menú
-OPTIONS="\n\n\n"
+OPTIONS="\n\n\n\n󰗽"
 
 # Muestra el menú de Rofi y captura la selección del usuario
 # Le indicamos a Rofi que use el tema específico con -theme
@@ -21,6 +21,9 @@ case "$SELECTION" in
         systemctl suspend
         ;;
     "")
+        loginctl lock-session
+        ;;
+    "󰗽")
         hyprctl dispatch exit
         ;;
     *)
