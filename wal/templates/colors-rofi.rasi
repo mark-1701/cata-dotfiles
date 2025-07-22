@@ -1,6 +1,6 @@
 * {{
     background: rgb({background.rgb});
-    background-transparent-8: rgba({background.rgb},0.85);
+    background-transparent-8: rgba({background.rgb},0.80);
     foreground: rgb({foreground.rgb});
     foreground-transparent-1: rgba({foreground.rgb},0.06);
     color4: rgb({color4.rgb});
