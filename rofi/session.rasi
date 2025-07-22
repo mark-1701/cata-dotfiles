@@ -29,7 +29,7 @@ window {
     border-color:               @foreground;
 
     cursor:                     "default";
-    background-color:           @background-transparent-7;
+    background-color:           @background-transparent-8;
 }
 
 // ***************** MAINBOX ******************
