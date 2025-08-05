@@ -24,13 +24,13 @@
     ],
     // Custom Modules
     "custom/session-boton": {
-        "format": "",
+        "format": "⏻",
         "tooltip": "Apagar el sistema",
         "on-click": "~/.local/bin/rofi-custom-menu",
         "interval": 9999999
     },
     "custom/menu-boton": {
-        "format": "󰣇",
+        "format": "",
         "tooltip": "Apagar el sistema",
         "on-click": "rofi -show drun",
         "interval": 9999999
