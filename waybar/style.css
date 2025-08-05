@@ -34,12 +34,12 @@ window#waybar.hidden {
 }
 
 .modules-left {
-    margin-left: 12px;
+    margin-left: 5px;
     border-radius: 100px 20px 100px 20px;
 }
 
 .modules-right {
-    margin-right: 12px;
+    margin-right: 5px;
     border-radius: 20px 100px 20px 100px;
 }
 
